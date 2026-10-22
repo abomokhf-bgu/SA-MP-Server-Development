@@ -1,8 +1,8 @@
-# Contributors and project roles
+# Credits and responsibilities
 
-- **Max Conway** — SA-MP server owner, project direction, development to-do lists and task assignments, coordination of developers and administrators, some Pawn scripting and testing; independently installed and set up the associated vBulletin 4 forum.
-- **Other developers** — collaborative development of the existing Pawn server codebase, including substantial implementation work. Individual credits can be added with their permission.
-- **ShadowOG69** — original copyright holder named in the supplied 2020 MIT license. The original notice is preserved in the source archive.
-- **Third-party contributors** — libraries and dependencies retain their respective licenses.
+- **Max Conway** — server owner, development coordinator, task planning, developer and administrator coordination, and some collaborative Pawn development/testing. Independently installed and configured the associated vBulletin 4 forum.
+- **Other developers** — major contributions to the existing server's Pawn code and gameplay systems. Individual credits can be added after confirmation.
+- **ShadowOG69** — original copyright attribution in the supplied MIT LICENSE (2020). Notice preserved as legally required.
+- **Third-party authors** — dependencies and plugins retain their respective licenses and attribution.
 
-This project was not developed from scratch by Max Conway, nor was Max Conway the main contributor to the server's code.
+This project was not written from scratch by Max Conway or by any one individual on the team.

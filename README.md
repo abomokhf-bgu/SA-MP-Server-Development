@@ -1,21 +1,26 @@
 # SA-MP Roleplay Server — Project Archive
 
-**Project owner & development coordinator:** Max Conway (server identity)  
-**Status:** Private portfolio preparation · Existing collaborative codebase
+**Project owner and development coordinator:** Max Conway (server identity)  
+**Status:** Private portfolio preparation; collaborative, existing codebase.
 
 ## Project overview
-This repository documents a San Andreas Multiplayer (SA-MP) roleplay server developed collaboratively using Pawn on top of an existing codebase.
+This repository documents a San Andreas Multiplayer (SA-MP) roleplay server and its associated community operations. The server used Pawn scripts and was developed collaboratively on top of an existing codebase.
 
-## My responsibilities
-I owned and managed the server project, set development priorities, wrote feature requirements and to-do lists, assigned tasks to developers, coordinated developers and administrators, and participated in some Pawn scripting and testing. I was **not** the primary programmer or sole author of the server code.
+## My role
+As the **server owner and development coordinator**, I set project direction, prepared feature requirements and developer to-do lists, assigned development tasks, coordinated developers and administrators, and participated in some Pawn scripting and testing. I was **not** the primary programmer or sole author of the server code.
 
-## vBulletin 4 community forum
-I independently installed and configured the project's vBulletin 4 forum. This reflects independent platform setup and administration, **not** development of vBulletin itself. Forum screenshots may be added after privacy review.
+## vBulletin 4 forum
+I independently installed and set up the project's vBulletin 4 community forum. This describes deployment and configuration of an existing forum platform, **not** authorship of vBulletin software. Forum screenshots and technical documentation may be added later after privacy review; licensed forum software is not included.
 
-## Project contents
-The source archive includes gamemodes, filterscripts, Pawn includes, configuration examples, and historical SQL files. The reviewed source archive will be added separately; this README does not claim that the full code is already uploaded.
+## Repository layout
+- `gamemodes/` — existing Pawn gamemode and supporting systems
+- `filterscripts/` — additional server scripts
+- `include/` — third-party Pawn includes and dependencies (licenses require separate review)
+- Database dumps and server configuration are deliberately excluded from this archive.
+- Personalized donor scripts and historical working copies are excluded pending permission and privacy review.
 
-## Credits, licensing and safety
-The original MIT license credits **ShadowOG69 (2020)**; that copyright notice must remain intact. Other team members and third-party authors retain credit and rights to their work. Project ownership does not imply sole code authorship.
+## Attribution and licensing
+The existing MIT license retains the original **2020 ShadowOG69** copyright notice. Ownership of the server project does not transfer copyright in the original codebase. Other contributors and third-party components retain their own rights. This archive does not imply that Max Conway wrote every included file.
 
-RCON and database credentials in the prepared archive have placeholders. Third-party binaries, server executables, and runtime data have been excluded from the portfolio ZIP. Inspect the remaining SQL, code, dependencies, and licensing before public release. No claim is made that the project compiles or runs as-is.
+## Security and release notes
+The RCON password and database credentials in this prepared archive use placeholders. Do not use these placeholders in a live deployment. Rotate any previously exposed real credentials. Before making this repository public, inspect all scripts, SQL records, server addresses, embedded tokens, third-party binaries, and licenses. The code has not been compiled or verified to run.

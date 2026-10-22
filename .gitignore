@@ -1,0 +1,14 @@
+# Local/private data
+.env
+.env.*
+!.env.example
+*.log
+*.amx
+*.pdb
+.DS_Store
+__pycache__/
+*.pyc
+# Runtime user data and backups
+scriptfiles/*.log
+scriptfiles/*.db
+*.bak
