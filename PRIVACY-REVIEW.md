@@ -1,25 +1,31 @@
 # Publication review
 
-This repository is an archive of the Project Roleplay SA-MP server, not a runnable or security-audited release.
+Project Roleplay is a historical SA-MP source archive, not a tested or security-audited server release.
 
-## Already done
+## Checks performed (23 October 2026)
 
-- Removed the original database dumps and private server configuration from the current project snapshot.
-- Excluded some historical working copies and personalized donor scripts.
-- Replaced a historical hard-coded external IP address in the current gamemode snapshot with a localhost-only check.
-- Kept the original license notice and existing author comments.
-- Added forum screenshots and documentation showing the community side of the project.
+- Inspected the repository's complete current file inventory: **483 tracked files** at the time of review.
+- Checked filenames for common database dumps, private keys, environment files, and configuration exports. No obvious files with those extensions were found in the current tree.
+- Inspected over 100 readable project and documentation files, including account-handling, jobs, properties, vehicles, factions, staff systems, and filterscripts.
+- Searched inspected text for common patterns associated with embedded secrets, private-key blocks, Discord webhooks, email addresses, and IPv4 addresses. **No clear live secret was identified by these checks.**
+- Inspected commit metadata and selected available diffs, including the original source-upload commit.
+- Verified the current project documentation and forum screenshot references.
 
-## Before making the source public
+## Limits of the scan
 
-- **Code permissions:** Confirm that the original codebase, contributions by other developers, mapping assets, and bundled Pawn dependencies can be redistributed. The top-level MIT license is not proof that every included file has the same license.
-- **Full Git history:** Review earlier commits, not just the current files. Previously committed credentials or private data remain accessible in Git history even after being deleted from the latest version.
-- **Secrets:** Run a full-history secrets scan and rotate any credentials that might have been exposed. Check old server passwords, database connections, tokens, addresses, and personal details.
-- **Community privacy:** Review screenshots and source comments for real names, account data, or details that should not be shared.
-- **Build:** Dependencies and runtime files are incomplete. The code has not been compiled or tested as a complete server.
+**This is not a complete clean result.** The GitHub connection did not return the full content of several large source files, including `gamemodes/PRP.pwn`, `filterscripts/server_maps.pwn`, and `filterscripts/donorMaps.inc`. Some historical commit diffs are incomplete. Pattern matching also misses secrets that use unusual names or formats. The bundled third-party libraries were not all audited line by line.
 
-## Current review scope
+A removed secret can still exist in an earlier Git commit. No complete full-history scan or credential validation was performed.
 
-The current repository tree and documentation were checked for obvious publication problems, including filenames associated with database exports and credentials. Selected Pawn source files were also inspected. **This was not a complete line-by-line audit of the entire codebase or its commit history.** No claim of publication safety is made.
+## Before publishing the full source
 
-Keep the full source archive private until redistribution rights and historical secrets have been reviewed. A public portfolio containing only original documentation, approved screenshots, and code samples you are allowed to share is a lower-risk alternative.
+1. **Permissions:** Confirm the right to redistribute the existing Pawn codebase, other developers' contributions, map assets, and bundled third-party dependencies. The top-level MIT notice is not automatically a license for every file.
+2. **Local full-history scan:** Clone the repository on a trusted machine and run a dedicated scanner such as Gitleaks against all commits. Investigate findings without publishing any detected secrets.
+3. **Large source files:** Inspect the three large files named above, plus any other files omitted by the connected review, for credentials, addresses, personal data, and third-party ownership.
+4. **Credentials:** Rotate any historical server, database, or service credentials that may still be active.
+5. **Screenshots:** Review visible usernames, avatars, and member information before making the repository public.
+6. **Build:** Treat the archive as non-runnable unless dependencies and configuration are restored and a build is verified.
+
+The original database and private server configuration were excluded from the current source snapshot. Some historical working copies and personalized donor scripts were also excluded. This does not establish that previous commits are free of sensitive data.
+
+**Recommendation:** Keep the full source repository private until the permission and full-history checks are complete. A separate public portfolio with documentation, reviewed screenshots, and approved code excerpts is a safer option.
