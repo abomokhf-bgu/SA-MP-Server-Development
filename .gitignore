@@ -1,14 +1,44 @@
-# Local/private data
+# Credentials and local configuration
 .env
 .env.*
 !.env.example
-*.log
+*.pem
+*.key
+*.p12
+*.pfx
+server.cfg
+mysql.ini
+database.ini
+config.local.*
+secrets.*
+
+# Databases, exports, backups and runtime state
+*.sql
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+*.dump
+*.bak
+*.backup
+*.zip
+*.7z
+*.rar
+scriptfiles/
+logs/
+
+# Compiled output and editor files
 *.amx
 *.pdb
+*.log
+*.tmp
+*.swp
 .DS_Store
+Thumbs.db
+.vscode/
+.idea/
 __pycache__/
 *.pyc
-# Runtime user data and backups
-scriptfiles/*.log
-scriptfiles/*.db
-*.bak
+
+# Ignore rules only apply to future untracked files;
+# they do not remove files already committed or present in Git history.
