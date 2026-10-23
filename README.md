@@ -1,26 +1,46 @@
-# SA-MP Roleplay Server — Project Archive
+# Project Roleplay (SA-MP)
 
-**Project owner, host, and development coordinator:** Fadi Abomokh (known in the server as **Max Conway**)  
-**Status:** Private portfolio preparation; collaborative, existing codebase.
+Project Roleplay was a GTA: San Andreas Multiplayer roleplay server I owned and hosted under the name **Max Conway**. I worked with developers and administrators to maintain the server, plan updates, test features, and keep the community running.
 
-## Project overview
-This repository documents a San Andreas Multiplayer (SA-MP) roleplay server and its associated community operations. The server used Pawn scripts and was developed collaboratively on top of an existing codebase.
+I'm **Fadi Abomokh**, a software engineering student. I've kept this repository as a record of the project and the experience I gained working on it.
 
-## My role
-I represented myself in Project Roleplay under the in-game/server identity **Max Conway**. As the **server owner and host**, I was responsible for hosting the server and coordinating its operation. As the **development coordinator**, I set project direction, prepared feature requirements and developer to-do lists, assigned development tasks, coordinated developers and administrators, and participated in some Pawn scripting and testing. I was **not** the primary programmer or sole author of the server code.
+## What I worked on
 
-## vBulletin 4 forum
-I independently installed and set up the project's vBulletin 4 community forum. This describes deployment and configuration of an existing forum platform, **not** authorship of vBulletin software. Additional forum documentation is available in [docs/forum/README.md](docs/forum/README.md). Screenshots are retained separately for privacy review; licensed forum software is not included.
+My role covered both the server and its community:
 
-## Repository layout
-- `gamemodes/` — existing Pawn gamemode and supporting systems
-- `filterscripts/` — additional server scripts
-- `include/` — third-party Pawn includes and dependencies (licenses require separate review)
-- Database dumps and server configuration are deliberately excluded from this archive.
-- Personalized donor scripts and historical working copies are excluded pending permission and privacy review.
+- **Server ownership and hosting:** managed the project and coordinated its day-to-day operation.
+- **Development teamwork:** discussed features, organized tasks, tested changes, and contributed to Pawn scripting alongside other developers.
+- **Server systems:** worked with the team on features involving administration, factions, gangs/families, vehicles, properties, and other roleplay systems.
+- **Community forum:** independently set up and managed the associated vBulletin 4 forum, including its structure and staff/community sections.
 
-## Attribution and licensing
-The existing MIT license retains the original **2020 ShadowOG69** copyright notice. Ownership of the server project does not transfer copyright in the original codebase. Other contributors and third-party components retain their own rights. This archive does not imply that Max Conway wrote every included file.
+The server already had an existing codebase, and several developers contributed to it. **I did not write all of the code in this repository.** The forum was built with vBulletin; my work there was setup, configuration, and management rather than developing the forum software itself.
 
-## Security and release notes
-The RCON password and database credentials in this prepared archive use placeholders. Do not use these placeholders in a live deployment. Rotate any previously exposed real credentials. Before making this repository public, inspect all scripts, SQL records, server addresses, embedded tokens, third-party binaries, and licenses. The code has not been compiled or verified to run.
+## Project files
+
+| Location | Contents |
+| --- | --- |
+| [`gamemodes/`](gamemodes/) | Main Pawn gamemode and supporting systems |
+| [`filterscripts/`](filterscripts/) | Additional Pawn scripts and map-related files |
+| [`include/`](include/) | Pawn includes and external dependencies |
+| [`docs/forum/`](docs/forum/) | Forum background and screenshots |
+| [`CONTRIBUTORS.md`](CONTRIBUTORS.md) | Credits and responsibilities |
+
+This is a **historical source archive**, not a ready-to-run server package. The database, private configuration, and some working files are intentionally missing. I haven't verified that the archived code compiles or runs as-is.
+
+## Forum screenshots
+
+The vBulletin forum was a separate part of the project that I handled myself. These are screenshots of the recovered forum:
+
+| Applications and appeals | Staff roster |
+| --- | --- |
+| ![Application and appeal formats](docs/forum/screenshots/forms.png) | ![Project Roleplay staff roster](docs/forum/screenshots/staff-roster.png) |
+| Community and factions | Information and support |
+| ![Community and factions](docs/forum/screenshots/community-and-factions.png) | ![Information and support](docs/forum/screenshots/information-and-support.png) |
+
+More context is in the [forum documentation](docs/forum/README.md).
+
+## Credits and notes
+
+The source contains work by multiple developers and third-party authors. I have kept the original copyright notice in [LICENSE](LICENSE); see [CONTRIBUTORS.md](CONTRIBUTORS.md) for the distinction between my role and others' contributions. The top-level license should not be assumed to cover every included third-party file.
+
+The repository has been prepared without the original database or private server configuration, but the source has **not** received a complete security, privacy, or redistribution-rights audit. See [PRIVACY-REVIEW.md](PRIVACY-REVIEW.md) before sharing it publicly.
