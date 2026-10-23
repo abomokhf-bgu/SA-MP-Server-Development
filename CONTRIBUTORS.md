@@ -1,8 +1,11 @@
-# Credits and responsibilities
+# Contributors and credits
 
-- **Max Conway** — server owner, development coordinator, task planning, developer and administrator coordination, and some collaborative Pawn development/testing. Independently installed and configured the associated vBulletin 4 forum.
-- **Other developers** — major contributions to the existing server's Pawn code and gameplay systems. Individual credits can be added after confirmation.
-- **ShadowOG69** — original copyright attribution in the supplied MIT LICENSE (2020). Notice preserved as legally required.
-- **Third-party authors** — dependencies and plugins retain their respective licenses and attribution.
+**Fadi Abomokh (Max Conway)** — Project Roleplay server owner and host. Coordinated developers and administrators, helped plan and test features, and participated in collaborative Pawn scripting. Independently installed, configured, and managed the community's vBulletin forum.
 
-This project was not written from scratch by Max Conway or by any one individual on the team.
+**Server developers and administrators** — Contributed to the existing Pawn codebase, server systems, and community operations. Individual credits should be added where they can be verified.
+
+**ShadowOG69** — Credited in the original 2020 MIT license notice, which has been preserved.
+
+**Other authors** — The repository includes third-party Pawn libraries, mapping work, and code with author credits in individual files. Those contributions remain the work of their respective authors.
+
+This archive reflects a team project built on an existing codebase. Owning and hosting the server did not make me the author of every script.
