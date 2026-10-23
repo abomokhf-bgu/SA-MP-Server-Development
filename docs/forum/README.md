@@ -1,21 +1,35 @@
-# Project Roleplay — vBulletin Community Forum
+# Project Roleplay forum
 
-## Overview
-Project Roleplay (PRP) maintained a vBulletin 4 community forum alongside its San Andreas Multiplayer (SA-MP) roleplay server. This document records the historical forum interface and organization recovered from a local backup.
+Alongside the SA-MP server, Project Roleplay had a vBulletin 4 forum where players could find announcements, discuss factions, contact staff, and submit applications or appeals.
 
-## My role
-I independently installed, configured, and managed the project's vBulletin forum, including community sections, staff presentation, and administrative workflows. vBulletin is third-party software; I do **not** claim to have developed its source code.
+I installed, configured, and managed this forum independently. That included organizing the sections, maintaining the staff presentation, and handling the forum side of community administration. I used the existing vBulletin platform; I didn't write vBulletin itself.
 
-## Selected visual evidence
-- **Application and appeal formats (previously labeled "Forum sections"):** templates and required formats for submitting applications and appeals. This screenshot is **not** a general overview of the forum's categories.
-- **Staff roster:** staff hierarchy and roster presentation.
-- **Community and factions:** community discussions, factions, and families.
-- **Information and support:** announcements, assistance, appeals, and support sections.
+I later restored the old forum locally from its files and database backup so I could document this part of the project.
 
-Screenshots are organized under [screenshots/](screenshots/). They demonstrate the forum's organization and administration, not original vBulletin source-code development.
+## Screenshots
 
-## Related development
-The SA-MP server was collaboratively developed using Pawn. My role included ownership, hosting, coordinating developers and administrators, feature planning, and participation in scripting and testing. Forum setup/management was my independent contribution.
+### Application and appeal forms
+Templates and instructions members used when submitting applications or appeals.
 
-## Archival and security notes
-The historical forum was restored locally from existing files and a database backup. Do not publicly deploy the outdated vBulletin/PHP installation without a security review. Do not publish the licensed vBulletin installation, raw forum database, credentials, or private member records. Historical screenshots may contain usernames and profile imagery and should be reviewed/redacted before public release.
+![Application and appeal forms](screenshots/forms.png)
+
+### Staff roster
+The forum's staff presentation and hierarchy.
+
+![Staff roster](screenshots/staff-roster.png)
+
+### Community and factions
+Sections connected to the roleplay community and its factions.
+
+![Community and factions](screenshots/community-and-factions.png)
+
+### Information and support
+Information and help areas for community members.
+
+![Information and support](screenshots/information-and-support.png)
+
+## About the archive
+
+The screenshots show the historical forum, not a currently hosted public service. The original vBulletin installation and member database are not included here. The restored installation uses outdated software and should remain isolated locally rather than being exposed to the internet.
+
+[Back to the server project](../../README.md)
